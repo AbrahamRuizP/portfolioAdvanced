@@ -1,5 +1,6 @@
 import { experience } from "../data";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { Label } from "./Label";
 
 export default function Experience() {
   const ref = useScrollReveal();
@@ -10,7 +11,9 @@ export default function Experience() {
         <div ref={ref} className="fade-in-section">
           <div className="row mb-5">
             <div className="col">
-              <p className="section-label">Experience</p>
+
+              <Label title="Experience" />
+
               <h2 className="section-title">Where I've worked</h2>
             </div>
           </div>

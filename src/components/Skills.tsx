@@ -1,5 +1,6 @@
 import { skills } from "../data";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { Label } from "./Label";
 
 export default function Skills() {
   const ref = useScrollReveal();
@@ -10,13 +11,16 @@ export default function Skills() {
         <div ref={ref} className="fade-in-section">
           <div className="row mb-5">
             <div className="col">
-              <p className="section-label">Skills</p>
+
+              <Label title="Skills"/>
+
               <h2 className="section-title">Tools of the trade</h2>
             </div>
           </div>
 
           <div className="row g-4">
             {skills.map((group, i) => (
+              
               <div key={i} className="col-sm-6 col-md-4">
                 <div className="skill-group">
                   <p className="skill-category">{group.category}</p>
@@ -27,6 +31,7 @@ export default function Skills() {
                   </div>
                 </div>
               </div>
+              
             ))}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { softSkills } from "../data";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { Label } from "./Label";
 
 export default function SoftSkills() {
   const ref = useScrollReveal();
@@ -10,12 +11,21 @@ export default function SoftSkills() {
         <div ref={ref} className="fade-in-section">
           <div className="row mb-5">
             <div className="col-lg-6">
-              <p className="section-label">Soft Skills</p>
+
+              <Label title="Soft Skills" />
+
               <h2 className="section-title">The human side</h2>
             </div>
+
             <div className="col-lg-6 d-flex align-items-end">
-              <p style={{ color: "var(--text-muted)", fontSize: "0.88rem", fontStyle: "italic", lineHeight: 1.7 }}>
-                Technical skills get you hired. These keep you valuable.
+              <p
+                style={{
+                  color: "var(--text-muted)",
+                  fontSize: "0.88rem",
+                  fontStyle: "italic",
+                  lineHeight: 1.7
+                }}>
+                Soft skills that I have developed with effort and empathy.
               </p>
             </div>
           </div>

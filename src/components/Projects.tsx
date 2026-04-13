@@ -1,5 +1,6 @@
 import { projects } from "../data";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { Label } from "./Label";
 
 export default function Projects() {
   const ref = useScrollReveal();
@@ -10,7 +11,9 @@ export default function Projects() {
         <div ref={ref} className="fade-in-section">
           <div className="row mb-5">
             <div className="col">
-              <p className="section-label">Projects</p>
+
+              <Label title="Projects" />
+
               <h2 className="section-title">Selected work</h2>
             </div>
           </div>
