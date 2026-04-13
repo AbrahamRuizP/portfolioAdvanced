@@ -38,12 +38,12 @@ export default function About() {
                 </div>
                 
                 <div className="stat-item">
-                  <div className="stat-number">4</div>
+                  <div className="stat-number">4+</div>
                   <div className="stat-label">Projects shipped</div>
                 </div>
                 
                 <div className="stat-item">
-                  <div className="stat-number">2</div>
+                  <div className="stat-number">3</div>
                   <div className="stat-label">Core industries served</div>
                 </div>
 
