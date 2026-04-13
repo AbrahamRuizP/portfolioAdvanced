@@ -1,8 +1,6 @@
 // About.tsx
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { Label } from "./Label";
-import { revealItem } from "../data/reveal";
-import { motion } from "framer-motion";
 
 export default function About() {
   const ref = useScrollReveal();
