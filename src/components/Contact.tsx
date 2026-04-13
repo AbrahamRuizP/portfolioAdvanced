@@ -188,6 +188,7 @@ export default function Contact() {
             {/* Info */}
             <div className="col-lg-5">
               <div className="contact-info">
+                <Label title="Get In Touch" />
                 <p className="section-label" style={{ marginBottom: "24px" }}>Get in touch</p>
 
                 <div className="contact-info-item">
