@@ -1,4 +1,4 @@
-import { useState, FormEvent } from "react";
+import { useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { GithubIcon } from "../data/GithubIcon";
 import { Label } from "./Label";
@@ -151,7 +151,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   className="btn-primary-custom"
-                  disabled={status === "sending"}
+                  disabled={isSubmitting}
                   style={{ opacity: status === "sending" ? 0.7 : 1, cursor: status === "sending" ? "not-allowed" : "pointer" }}
                 >
                   {status === "sending" ? (
